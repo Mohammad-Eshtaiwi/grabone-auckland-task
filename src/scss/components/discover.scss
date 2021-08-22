@@ -1,0 +1,34 @@
+@import "../colors.scss";
+
+.discovery {
+  background: #fff;
+
+  &__title {
+    color: $blue;
+    font-size: 3.2rem;
+    padding: 1.5rem;
+  }
+  &__menu {
+    border-top: 1px solid #dbdbdb;
+    // gap: 1rem;
+    font-size: 1.6rem;
+    list-style: none;
+    li:not(:last-of-type) {
+      border-bottom: 1px solid #dbdbdb;
+    }
+    a {
+      padding: 1rem 1.5rem;
+      color: $black;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      & span:first-of-type {
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover span:first-of-type {
+        text-decoration: underline;
+        color: $blue;
+      }
+    }
+  }
+}

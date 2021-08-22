@@ -1,0 +1,64 @@
+@import "../colors.scss";
+
+.subscribe {
+  padding: 5em 4em;
+  background-color: #fff;
+  display: grid;
+  @media screen and (min-width: 990px) {
+    grid-template-columns: 60% 40%;
+  }
+  @media screen and (max-width: 990px) {
+    gap: 10px;
+    form {
+      max-width: 600px;
+    }
+  }
+  p {
+    font-size: 2.6rem;
+    color: $blue;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 85% 1fr;
+    align-self: flex-start;
+    position: relative;
+    @media screen and (max-width: 630px) {
+      grid-template-columns: 75% 1fr;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 8px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      font-size: 2rem;
+      color: $blue;
+    }
+    button {
+      padding: 0.6em;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    input {
+      padding-left: 2.5em;
+    }
+    @media screen and (max-width: 366px) {
+      grid-template-columns: initial;
+      gap: 10px;
+      input {
+        padding: 5px;
+        padding-left: 35px;
+      }
+      span {
+        top: 22% !important;
+      }
+      button {
+        padding: 0.3em;
+        border-radius: 3px;
+      }
+    }
+  }
+}

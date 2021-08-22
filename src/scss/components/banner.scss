@@ -1,0 +1,10 @@
+.banner {
+  @media screen and (max-width: 1060px) {
+    & > div:first-of-type {
+      display: none;
+      & + div {
+        width: 100%;
+      }
+    }
+  }
+}

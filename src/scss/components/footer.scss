@@ -1,0 +1,96 @@
+@import "../colors.scss";
+footer {
+  background-color: #fff;
+  padding: 3em 0;
+  h2 {
+    font-size: 1.8rem;
+    color: #4f5864;
+  }
+  .icon {
+    color: #4f5864;
+    // background-color: #4f5864;
+    font-size: 2.5rem;
+    border-radius: 10000px;
+    cursor: pointer;
+  }
+  .follow-us {
+    button {
+      font-size: 1.6rem;
+      display: inline-flex;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .mobile-icon {
+        margin-right: 3px;
+        font-size: 1.6rem;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      .flex {
+        justify-content: initial;
+      }
+    }
+  }
+  nav {
+    display: grid;
+    gap: 10px;
+    a {
+      text-decoration: none;
+      color: $grey-3;
+      font-size: 1.6rem;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .newsletter-signup {
+    p {
+      font-size: 1.6rem;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 80% 1fr;
+      align-self: flex-start;
+      position: relative;
+      max-width: 650px;
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 2rem;
+        color: $blue;
+      }
+      button {
+        padding: 0.6em;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      input {
+        padding-left: 2.5em;
+      }
+      @media screen and (max-width: 366px) {
+        grid-template-columns: initial;
+        gap: 10px;
+        input {
+          padding: 5px;
+          padding-left: 35px;
+        }
+        span {
+          top: 22% !important;
+        }
+        button {
+          padding: 0.3em;
+          border-radius: 3px;
+        }
+      }
+    }
+    @media screen and (max-width: 1150px) {
+      order: -1;
+    }
+  }
+}

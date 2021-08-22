@@ -1,0 +1,12 @@
+.header-image {
+  height: 12vw;
+  @media screen and (max-width: 600px) {
+    height: 20vw;
+  }
+  @media screen and (min-width: 600px) and (max-width: 950px) {
+    height: 14vw;
+  }
+  img {
+    height: 100%;
+  }
+}

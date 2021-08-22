@@ -1,0 +1,45 @@
+@import "../colors.scss";
+.sub-nav {
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: #fff;
+  @media screen and (max-width: 1060px) {
+    display: none;
+  }
+  &__items {
+    flex-basis: 60%;
+    display: flex;
+    &__item,
+    &__item:visited {
+      text-decoration: none;
+      padding: 1.2em;
+      color: $black;
+      transition: 0.3s all ease-in-out;
+      font-weight: 500;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .search {
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    input {
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 0.5em 0;
+      padding-left: 40px;
+    }
+    button {
+      position: absolute;
+      font-size: 2rem;
+      background-color: transparent;
+      border: none;
+      left: 10px;
+      top: 19px;
+    }
+  }
+}
